@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Hexagon</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on Hexagon</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Latest Technology News</title>
+      <link>http://localhost:1313/news/first-news-article/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/first-news-article/</guid>
+      <description>Stay updated with the latest developments in technology and innovation.</description>
+    </item>
+    <item>
+      <title>Company Announcements</title>
+      <link>http://localhost:1313/news/third-news-article/</link>
+      <pubDate>Fri, 12 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/third-news-article/</guid>
+      <description>Latest announcements and updates from our company.</description>
+    </item>
+    <item>
+      <title>Industry Updates</title>
+      <link>http://localhost:1313/news/second-news-article/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/second-news-article/</guid>
+      <description>Important updates from the industry that you need to know.</description>
+    </item>
+    <item>
+      <title>Contact Us</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;p&gt;Get in touch with us today!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Our Services</title>
+      <link>http://localhost:1313/service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/service/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
