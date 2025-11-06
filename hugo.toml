@@ -1,7 +1,9 @@
 theme = 'hexagon'
-baseURL = 'https://traoantam.github.io/hexagon/'
+baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
 title = 'Hexagon'
-c[caches]
+canonifyURLs = true
+
+[caches]
   [caches.images]
-    dir = ':cacheDir/images'= ':cacheDir/images'
+    dir = ':cacheDir/images'
