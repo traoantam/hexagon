@@ -308,33 +308,33 @@
                                         <span class="sub-title">{{ if .Params.form_subtitle }}{{ .Params.form_subtitle }}{{ else }}request a quote{{ end }}</span>
                                         <h3 class="title">{{ if .Params.form_title }}{{ .Params.form_title }}{{ else }}How May We Help You!{{ end }}</h3>
                                     </div>
-                                    <form action="{{ if .Params.form_action }}{{ .Params.form_action }}{{ else }}#{{ end }}" method="POST">
+                                    <form id="contact-form" action="#" method="POST">
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <!-- Single Form Start -->
                                                 <div class="single-form">
-                                                    <input type="text" name="name" placeholder="Name *" required>
+                                                    <input type="text" name="name" id="contact-name" placeholder="Name *" required>
                                                 </div>
                                                 <!-- Single Form End -->
                                             </div>
                                             <div class="col-sm-6">
                                                 <!-- Single Form Start -->
                                                 <div class="single-form">
-                                                    <input type="email" name="email" placeholder="Email *" required>
+                                                    <input type="email" name="email" id="contact-email" placeholder="Email *" required>
                                                 </div>
                                                 <!-- Single Form End -->
                                             </div>
                                             <div class="col-sm-12">
                                                 <!-- Single Form Start -->
                                                 <div class="single-form">
-                                                    <input type="text" name="subject" placeholder="Subject *" required>
+                                                    <input type="text" name="subject" id="contact-subject" placeholder="Subject *" required>
                                                 </div>
                                                 <!-- Single Form End -->
                                             </div>
                                             <div class="col-sm-12">
                                                 <!-- Single Form Start -->
                                                 <div class="single-form">
-                                                    <textarea name="message" placeholder="Write A Message" required></textarea>
+                                                    <textarea name="message" id="contact-message" placeholder="Write A Message" required></textarea>
                                                 </div>
                                                 <!-- Single Form End -->
                                             </div>
@@ -516,6 +516,9 @@
 
     <!-- Main JS -->
     <script src="/assets/js/main.js"></script>
+
+    <!-- Contact Form Handler -->
+    <script src="/js/contact-form.js"></script>
 
 </body>
 

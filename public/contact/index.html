@@ -299,33 +299,33 @@
                                         <span class="sub-title">request a quote</span>
                                         <h3 class="title">How May We Help You!</h3>
                                     </div>
-                                    <form action="#" method="POST">
+                                    <form id="contact-form" action="#" method="POST">
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 
                                                 <div class="single-form">
-                                                    <input type="text" name="name" placeholder="Name *" required>
+                                                    <input type="text" name="name" id="contact-name" placeholder="Name *" required>
                                                 </div>
                                                 
                                             </div>
                                             <div class="col-sm-6">
                                                 
                                                 <div class="single-form">
-                                                    <input type="email" name="email" placeholder="Email *" required>
+                                                    <input type="email" name="email" id="contact-email" placeholder="Email *" required>
                                                 </div>
                                                 
                                             </div>
                                             <div class="col-sm-12">
                                                 
                                                 <div class="single-form">
-                                                    <input type="text" name="subject" placeholder="Subject *" required>
+                                                    <input type="text" name="subject" id="contact-subject" placeholder="Subject *" required>
                                                 </div>
                                                 
                                             </div>
                                             <div class="col-sm-12">
                                                 
                                                 <div class="single-form">
-                                                    <textarea name="message" placeholder="Write A Message" required></textarea>
+                                                    <textarea name="message" id="contact-message" placeholder="Write A Message" required></textarea>
                                                 </div>
                                                 
                                             </div>
@@ -506,6 +506,9 @@
 
     
     <script src="http://localhost:1313/assets/js/main.js"></script>
+
+    
+    <script src="http://localhost:1313/js/contact-form.js"></script>
 
 </body>
 

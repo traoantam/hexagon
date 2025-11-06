@@ -1,5 +1,5 @@
 theme = 'hexagon'
-baseURL = 'http://localhost:1313/'
+baseURL = 'https://traoantam.github.io/hexagon/'
 languageCode = 'en-us'
 title = 'Hexagon'
 canonifyURLs = true
