@@ -57,7 +57,7 @@
                 <div class="header-wrap">
 
                     <div class="header-logo">
-                        <a href="{{ "/" | relURL }}"><img src="/assets/images/logo.png" alt=""></a>
+                        <a href="{{ "/" | relURL }}"><img src="/assets/images/hexagon-logo.webp" alt=""></a>
                     </div>
 
                     <div class="header-menu d-none d-lg-block">
@@ -983,7 +983,7 @@
                         <div class="col-lg-3 col-sm-6">
                             <!-- Footer Widget Start -->
                             <div class="footer-widget-about">
-                                <a class="footer-logo" href="{{ "/" | relURL }}"><img src="/assets/images/logo-white.png" alt="Logo"></a>
+                                <a class="footer-logo" href="{{ "/" | relURL }}"><img src="/assets/images/hexagon-logo-transparent.png" alt="Logo"></a>
                                 <p>Accelerate innovation with world-class tech teams We’ll match you to an entire remote team of incredible freelance talent.</p>
                                 <div class="footer-social">
                                     <ul class="social">
@@ -1047,7 +1047,7 @@
                                                 <i class="far fa-envelope-open"></i>
                                             </div>
                                             <div class="info-text">
-                                                <span><a href="#">info@example.com</a></span>
+                                                <span><a href="mailto:{{ if .Site.Params.email }}{{ .Site.Params.email }}{{ else }}info@example.com{{ end }}">{{ if .Site.Params.email }}{{ .Site.Params.email }}{{ else }}info@example.com{{ end }}</a></span>
                                             </div>
                                         </li>
                                         <li>
@@ -1055,7 +1055,7 @@
                                                 <i class="flaticon-pin"></i>
                                             </div>
                                             <div class="info-text">
-                                                <span>60 East 65th Street, NY</span>
+                                                <span>{{ if .Site.Params.address }}{{ .Site.Params.address }}{{ else }}363 Nguyen Huu Tho, Da Nang, Viet Nam{{ end }}</span>
                                             </div>
                                         </li>
                                     </ul>
@@ -1076,7 +1076,7 @@
                             <div class="col-lg-12">
                                 <!-- Footer Copyright Text Start -->
                                 <div class="copyright-text text-center">
-                                    <p>© Copyrights 2022 techwix All rights reserved. </p>
+                                    <p>© Copyrights {{ now.Year }} {{ .Site.Title }} All rights reserved. </p>
                                 </div>
                                 <!-- Footer Copyright Text End -->
                             </div>

@@ -4,6 +4,11 @@ languageCode = 'en-us'
 title = 'Hexagon'
 canonifyURLs = true
 
+[params]
+  address = '363 Nguyen Huu Tho, Da Nang, Viet Nam'
+  phone = '+91 458 654 528'
+  email = 'info@example.com'
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'

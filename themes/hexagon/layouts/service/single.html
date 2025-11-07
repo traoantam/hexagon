@@ -57,7 +57,7 @@
                 <div class="header-wrap">
 
                     <div class="header-logo">
-                        <a href="{{ "/" | relURL }}"><img src="/assets/images/logo.png" alt=""></a>
+                        <a href="{{ "/" | relURL }}"><img src="/assets/images/hexagon-logo.webp" alt=""></a>
                     </div>
 
                     <div class="header-menu d-none d-lg-block">
@@ -164,7 +164,7 @@
 
 
         <!-- Page Banner Start -->
-        <div class="section page-banner-section" style="background-image: url({{ "/hexagon/assets/images/bg/page-banner.jpg" | absURL }});">
+        <div class="section page-banner-section" style="background-image: url({{ print site.BaseURL "assets/images/bg/hexagon-page-banner.webp" }});">
             <div class="shape-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="944px" height="894px">
                     <defs>
@@ -407,7 +407,7 @@
                                     <!--  Single Testimonial Start  -->
                                     <div class="single-testimonial-02">
                                         <div class="testimonial-thumb">
-                                            <img src="{{ .image | default "/assets/images/testi-3.jpg" }}" alt="{{ .name }}">
+                                            <img src="/assets/images/testi-1.webp" alt="{{ .name }}">
                                         </div>
                                         <div class="testimonial-content">
                                             <img src="/assets/images/testi-icon.png" alt="">
@@ -424,7 +424,7 @@
                                     <!--  Single Testimonial Start  -->
                                     <div class="single-testimonial-02">
                                         <div class="testimonial-thumb">
-                                            <img src="/assets/images/testi-3.jpg" alt="Mike Holder">
+                                            <img src="/assets/images/testi-2.webp" alt="Mike Holder">
                                         </div>
                                         <div class="testimonial-content">
                                             <img src="/assets/images/testi-icon.png" alt="">
@@ -439,7 +439,7 @@
                                     <!--  Single Testimonial Start  -->
                                     <div class="single-testimonial-02">
                                         <div class="testimonial-thumb">
-                                            <img src="/assets/images/testi-4.jpg" alt="Mike Fermalin">
+                                            <img src="/assets/images/testi-1.webp" alt="Mike Fermalin">
                                         </div>
                                         <div class="testimonial-content">
                                             <img src="/assets/images/testi-icon.png" alt="">
@@ -454,7 +454,7 @@
                                     <!--  Single Testimonial Start  -->
                                     <div class="single-testimonial-02">
                                         <div class="testimonial-thumb">
-                                            <img src="/assets/images/testi-3.jpg" alt="Mike Holder">
+                                            <img src="/assets/images/testi-2.webp" alt="Mike Holder">
                                         </div>
                                         <div class="testimonial-content">
                                             <img src="/assets/images/testi-icon.png" alt="">
@@ -477,124 +477,6 @@
             </div>
         </div>
         <!-- Testimonial End  -->
-
-        <!-- Pricing Start -->
-        <div class="section techwix-pricing-section section-padding-02">
-            <div class="container">
-                <!-- Pricing Wrap Start -->
-                <div class="pricing-wrap">
-                    <div class="section-title text-center">
-                        <h3 class="sub-title">{{ if .Params.pricing_subtitle }}{{ .Params.pricing_subtitle }}{{ else }}Pricing Plans{{ end }}</h3>
-                        <h2 class="title">{{ if .Params.pricing_title }}{{ .Params.pricing_title }}{{ else }}Affordable pricing for all{{ end }}</h2>
-                    </div>
-                    <div class="pricing-content-wrap">
-                        <div class="row">
-                            {{ range .Params.pricing_plans }}
-                            <div class="col-lg-4 col-md-6">
-                                <!-- Single Pricing Start -->
-                                <div class="single-pricing{{ if .featured }} active{{ end }}">
-                                    <div class="pricing-badge">
-                                        <span class="title">{{ .name }}</span>
-                                    </div>
-                                    <div class="pricing-price">
-                                        <span class="currency">{{ .currency | default "$" }}</span>
-                                        <h3 class="price">{{ .price }}<span>/{{ .period | default "Month" }}</span></h3>
-                                    </div>
-                                    <div class="pricing-content">
-                                        <ul class="pricing-list">
-                                            {{ range .features }}
-                                            <li>{{ . }}</li>
-                                            {{ end }}
-                                        </ul>
-                                        <div class="pricing-btn">
-                                            <a class="btn" href="{{ .button_link | default "#" }}">{{ .button_text | default "Try It Now" }}</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Single Pricing End -->
-                            </div>
-                            {{ else }}
-                            <!-- Default Pricing Plans -->
-                            <div class="col-lg-4 col-md-6">
-                                <!-- Single Pricing Start -->
-                                <div class="single-pricing">
-                                    <div class="pricing-badge">
-                                        <span class="title">Free</span>
-                                    </div>
-                                    <div class="pricing-price">
-                                        <span class="currency">$</span>
-                                        <h3 class="price">0<span>/Month</span></h3>
-                                    </div>
-                                    <div class="pricing-content">
-                                        <ul class="pricing-list">
-                                            <li>Community Support</li>
-                                            <li>Dedicated Tech Experts</li>
-                                            <li>Unlimited Storage</li>
-                                            <li>Custom Domains</li>
-                                        </ul>
-                                        <div class="pricing-btn">
-                                            <a class="btn" href="#">Try It Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Single Pricing End -->
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <!-- Single Pricing Start -->
-                                <div class="single-pricing active">
-                                    <div class="pricing-badge">
-                                        <span class="title">Starter</span>
-                                    </div>
-                                    <div class="pricing-price">
-                                        <span class="currency">$</span>
-                                        <h3 class="price">10<span>/Month</span></h3>
-                                    </div>
-                                    <div class="pricing-content">
-                                        <ul class="pricing-list">
-                                            <li>Community Support</li>
-                                            <li>Dedicated Tech Experts</li>
-                                            <li>Unlimited Storage</li>
-                                            <li>Custom Domains</li>
-                                        </ul>
-                                        <div class="pricing-btn">
-                                            <a class="btn" href="#">Try It Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Single Pricing End -->
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <!-- Single Pricing Start -->
-                                <div class="single-pricing">
-                                    <div class="pricing-badge">
-                                        <span class="title">Pro</span>
-                                    </div>
-                                    <div class="pricing-price">
-                                        <span class="currency">$</span>
-                                        <h3 class="price">30<span>/Month</span></h3>
-                                    </div>
-                                    <div class="pricing-content">
-                                        <ul class="pricing-list">
-                                            <li>Community Support</li>
-                                            <li>Dedicated Tech Experts</li>
-                                            <li>Unlimited Storage</li>
-                                            <li>Custom Domains</li>
-                                        </ul>
-                                        <div class="pricing-btn">
-                                            <a class="btn" href="#">Try It Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Single Pricing End -->
-                            </div>
-                            {{ end }}
-                        </div>
-                    </div>
-                </div>
-                <!-- Pricing Wrap End -->
-            </div>
-        </div>
-        <!-- Pricing End -->
 
         <!-- Brand Logo Start -->
         <div class="section techwix-brand-section techwix-brand-section-03">
@@ -642,7 +524,7 @@
         <div class="section techwix-cta-section-02 section-padding-02">
             <div class="container">
                 <!-- Cta Wrap Start -->
-                <div class="cta-wrap" style="background-image: url({{ "/hexagon/assets/images/bg/cta-bg.jpg" | absURL }});">
+                <div class="cta-wrap" style="background-image: url({{ print site.BaseURL "assets/images/bg/cta-bg.webp" }});">
                     <div class="row align-items-center">
                         <div class="col-xl-9 col-lg-8">
                             <!-- Cta Content Start -->
@@ -679,7 +561,7 @@
                         <div class="col-lg-3 col-sm-6">
                             <!-- Footer Widget Start -->
                             <div class="footer-widget-about">
-                                <a class="footer-logo" href="{{ "/" | relURL }}"><img src="/assets/images/logo-white.png" alt="Logo"></a>
+                                <a class="footer-logo" href="{{ "/" | relURL }}"><img src="/assets/images/hexagon-logo-transparent.png" alt="Logo"></a>
                                 <p>{{ if .Site.Params.footer_description }}{{ .Site.Params.footer_description }}{{ else }}Accelerate innovation with world-class tech teams We'll match you to an entire remote team of incredible freelance talent.{{ end }}</p>
                                 <div class="footer-social">
                                     <ul class="social">
@@ -757,7 +639,7 @@
                                                 <i class="flaticon-pin"></i>
                                             </div>
                                             <div class="info-text">
-                                                <span>{{ if .Site.Params.address }}{{ .Site.Params.address }}{{ else }}60 East 65th Street, NY{{ end }}</span>
+                                                <span>{{ if .Site.Params.address }}{{ .Site.Params.address }}{{ else }}363 Nguyen Huu Tho, Da Nang, Viet Nam{{ end }}</span>
                                             </div>
                                         </li>
                                     </ul>

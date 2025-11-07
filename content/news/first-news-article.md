@@ -2,7 +2,7 @@
 title: 'Latest Technology News'
 date: 2024-01-15
 author: 'Admin'
-image: '/assets/images/blog/blog-1.jpg'
+image: '/assets/images/blog/blog-1.webp'
 categories: ['Technology']
 tags: ['technology', 'innovation']
 summary: 'Stay updated with the latest developments in technology and innovation.'

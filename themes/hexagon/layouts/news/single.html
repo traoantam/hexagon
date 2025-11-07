@@ -57,7 +57,7 @@
                 <div class="header-wrap">
 
                     <div class="header-logo">
-                        <a href="{{ "/" | relURL }}"><img src="/assets/images/logo.png" alt=""></a>
+                        <a href="{{ "/" | relURL }}"><img src="/assets/images/hexagon-logo.webp" alt=""></a>
                     </div>
 
                     <div class="header-menu d-none d-lg-block">
@@ -120,7 +120,7 @@
             <div class="offcanvas-header">
                 <!-- Offcanvas Logo Start -->
                 <div class="offcanvas-logo">
-                    <a href="{{ "/" | relURL }}"><img src="/assets/images/logo-white.png" alt=""></a>
+                    <a href="{{ "/" | relURL }}"><img src="/assets/images/hexagon-logo-transparent.png" alt=""></a>
                 </div>
                 <!-- Offcanvas Logo End -->
                 <button type="button" class="close-btn" data-bs-dismiss="offcanvas"><i class="flaticon-close"></i></button>
@@ -164,7 +164,7 @@
 
 
         <!-- Page Banner Start -->
-        <div class="section page-banner-section" style="background-image: url({{ "/hexagon/assets/images/bg/page-banner.jpg" | absURL }});">
+        <div class="section page-banner-section" style="background-image: url({{ print site.BaseURL "assets/images/bg/hexagon-page-banner.webp" }});">
             <div class="shape-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="944px" height="894px">
                     <defs>
@@ -423,7 +423,7 @@
                                 <!-- Sidebar Widget End -->
 
                                 <div class="sidebar-widget">
-                                    <div class="widget-banner" style="background-image: url({{ "/hexagon/assets/images/blog/sidebar-img.jpg" | absURL }});">
+                                    <div class="widget-banner" style="background-image: url({{ print site.BaseURL "assets/images/blog/sidebar-img.jpg" }});">
                                         <div class="banner-content">
                                             <h4 class="title">The leading platform</h4>
                                             <a class="btn" href="{{ "/contact" | relURL }}">Get Started</a>
@@ -489,7 +489,7 @@
         <div class="section techwix-cta-section-02 section-padding-02">
             <div class="container">
                 <!-- Cta Wrap Start -->
-                <div class="cta-wrap" style="background-image: url({{ "/hexagon/assets/images/bg/cta-bg.jpg" | absURL }});">
+                <div class="cta-wrap" style="background-image: url({{ print site.BaseURL "assets/images/bg/cta-bg.webp" }});">
                     <div class="row align-items-center">
                         <div class="col-xl-9 col-lg-8">
                             <!-- Cta Content Start -->
@@ -517,7 +517,7 @@
 
 
         <!-- Footer Section Start -->
-        <div class="section footer-section footer-section-03" style="background-image: url({{ "/hexagon/assets/images/bg/footer-bg.jpg" | absURL }});">
+        <div class="section footer-section footer-section-03" style="background-image: url({{ print site.BaseURL "assets/images/bg/footer-bg.webp" }});">
 
             <div class="container">
                 <!-- Footer Widget Wrap Start -->
@@ -526,7 +526,7 @@
                         <div class="col-lg-3 col-sm-6">
                             <!-- Footer Widget Start -->
                             <div class="footer-widget-about">
-                                <a class="footer-logo" href="{{ "/" | relURL }}"><img src="/assets/images/logo-white.png" alt="Logo"></a>
+                                <a class="footer-logo" href="{{ "/" | relURL }}"><img src="/assets/images/hexagon-logo-transparent.png" alt="Logo"></a>
                                 <p>{{ if .Site.Params.footer_description }}{{ .Site.Params.footer_description }}{{ else }}Accelerate innovation with world-class tech teams We'll match you to an entire remote team of incredible freelance talent.{{ end }}</p>
                                 <div class="footer-social">
                                     <ul class="social">
@@ -604,7 +604,7 @@
                                                 <i class="flaticon-pin"></i>
                                             </div>
                                             <div class="info-text">
-                                                <span>{{ if .Site.Params.address }}{{ .Site.Params.address }}{{ else }}60 East 65th Street, NY{{ end }}</span>
+                                                <span>{{ if .Site.Params.address }}{{ .Site.Params.address }}{{ else }}363 Nguyen Huu Tho, Da Nang, Viet Nam{{ end }}</span>
                                             </div>
                                         </li>
                                     </ul>

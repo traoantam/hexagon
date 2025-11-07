@@ -2,7 +2,7 @@
 title: 'Industry Updates'
 date: 2024-01-10
 author: 'Admin'
-image: '/assets/images/blog/blog-2.jpg'
+image: '/assets/images/blog/blog-2.webp'
 categories: ['Business']
 tags: ['business', 'industry']
 summary: 'Important updates from the industry that you need to know.'

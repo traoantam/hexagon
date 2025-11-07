@@ -2,7 +2,7 @@
 title: 'Company Announcements'
 date: 2024-01-12
 author: 'Admin'
-image: '/assets/images/blog/blog-3.jpg'
+image: '/assets/images/blog/blog-3.webp'
 categories: ['Company']
 tags: ['announcements', 'company']
 summary: 'Latest announcements and updates from our company.'
